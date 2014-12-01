@@ -19,6 +19,18 @@ h1 {
 	font-size: 30pt;
 }
 
+a:link {
+    color: #fff;
+}
+
+a:visited {
+	color: #669999;
+}
+
+a:hover {
+	color: #669999;
+}
+
 @keyframes backgroundanimation {
 	from {background-position:50% 0px;}
 	to {background-position:50% 4000px;}
@@ -27,7 +39,7 @@ h1 {
 #settings {
 	width: 100%;
 	height: auto;
-	margin: 0 auto 0 auto;
+	margin: 0 0px 0 auto;
 	
 }
 
