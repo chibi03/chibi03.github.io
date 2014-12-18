@@ -36,9 +36,29 @@ a:hover {
 	to {background-position:50% 4000px;}
 }*/
 
+#font {
+	width: 736px;
+	height: 282px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 10;
+}
+
+
 #prism {
 	width: 180px;
 	height: 150px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 10;
+}
+
+#rays {
+	width: 498px;
+	height: 291px;
+	position: absolute;
 	left: 0;
 	bottom: 0;
 	z-index: 10;
