@@ -3,9 +3,9 @@ body {
 	color: #fff;
 	font-family: 'Montserrat', sans-serif; 
 	background-attachment:fixed;
-	/*background-image: url('../img/placeholder.svg');
+	background-image: url('../img/background.png');
 	background-repeat: repeat;
-	background-size: cover; */
+	background-size: cover; 
 	/*animation-name:backgroundanimation;
 	animation-duration:60s;
 	animation-timing-function:linear;
@@ -31,10 +31,10 @@ a:hover {
 	color: #669999;
 }
 
-@keyframes backgroundanimation {
+/*@keyframes backgroundanimation {
 	from {background-position:50% 0px;}
 	to {background-position:50% 4000px;}
-}
+}*/
 
 #settings {
 	width: 100%;
