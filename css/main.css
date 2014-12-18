@@ -36,6 +36,14 @@ a:hover {
 	to {background-position:50% 4000px;}
 }*/
 
+#prism {
+	width: 369px;
+	height: 308px;
+	left: 0;
+	bottom: 10;
+	z-index: 10;
+}
+
 #settings {
 	width: 100%;
 	height: auto;
