@@ -37,10 +37,10 @@ a:hover {
 }*/
 
 #prism {
-	width: 369px;
-	height: 308px;
+	width: 180px;
+	height: 150px;
 	left: 0;
-	bottom: 10;
+	bottom: 0;
 	z-index: 10;
 }
 
