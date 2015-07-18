@@ -33,11 +33,6 @@ a:visited {
 a:hover {
 	color: #fff;
 }
-a.menu:hover {
-	font-size: 25px;
-}
-
-
 
 ul.nobullet {
 	font-size: 20px;
@@ -48,11 +43,21 @@ ul.nobullet {
 
 li.enum {
 	font-size: 30px;
-    background-image: url(../img/rayy.png);
+    background-image: url(../img/list_gradient.png);
     background-repeat: no-repeat;
     background-position: -10% 50%;
-    background-size: 15%;
     padding: 15px;
+    margin: 5px;
+    width: 35%;
+}
+
+li.enum:hover {
+	font-size: 25px;
+    background-image: url(../img/list_gradient_hover.png);
+    background-repeat: no-repeat;
+    background-position: -10% 50%;
+    padding: 15px;
+    margin: 5px;
 }
 
 #prism {
