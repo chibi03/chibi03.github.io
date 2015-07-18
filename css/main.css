@@ -1,71 +1,57 @@
-@import url(ttp://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Fira+Mono:700);
+
+html {
+    background: rgba(0, 0, 0, 0) url("../img/texture.jpg") repeat scroll 0 0;
+}
+
 body { 
-	color: #fff;
-	font-family: 'Montserrat', sans-serif; 
-	background-attachment:fixed;
-	background-image: url('../img/background.png');
-	background-repeat: no-repeat;
-	background-size: cover; 
-	/*animation-name:backgroundanimation;
-	animation-duration:60s;
-	animation-timing-function:linear;
-	animation-delay:0s;
-	animation-iteration-count:infinite;
-	animation-direction:normal;
-	animation-play-state:running;*/
+	color: #000;
+	font-family: 'Droid Sans', sans-serif;
+    background: rgba(0, 0, 0, 0) url("../img/transparent_gradient.png") repeat-x fixed 0 0;
+    margin: 0;
+    padding: 20px 0 0;
 }
 
 h1 {
-	font-size: 30px;
+	font-size: 50px;
+	text-align: right;
+	font-family: 'Fira Mono', ;
 }
 
 a:link {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
 a:visited {
-	color: 	#EBEBE0;
+	color: 	#4C4C4C;
 }
 
 a:hover {
-	color: #669999;
+	color: #fff;
 }
 a.menu:hover {
 	font-size: 25px;
 }
 
-/*@keyframes backgroundanimation {
-	from {background-position:50% 0px;}
-	to {background-position:50% 4000px;}
-}*/
 
 
 ul.nobullet {
 	font-size: 20px;
 	list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-	text-align: center;
+    padding-right: 20px;
+	text-align: left;
 }
 
 li.enum {
-    background-image: url(../data/ray.png);
+	font-size: 30px;
+    background-image: url(../img/rayy.png);
     background-repeat: no-repeat;
-    background-position: 40% 50%;
+    background-position: -10% 50%;
     background-size: 15%;
     padding: 10px;
 }
-
-#font {
-	width: 736px;
-	height: 282px;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	z-index: 10;
-}
-
 
 #prism {
 	width: 180px;
@@ -76,14 +62,6 @@ li.enum {
 	z-index: 10;
 }
 
-#rays {
-	width: 498px;
-	height: 291px;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	z-index: 10;
-}
 
 #settings {
 	width: 100%;
@@ -93,15 +71,18 @@ li.enum {
 }
 
 #wrapper {
-	width: 100%;.
+	width: 90%;
+	border-radius: 15px;
+	background: #f2f2eb url("../img/styrofoam.jpg") repeat scroll 0 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	height: auto;
-	max-width: 1000px;
-	margin: 0 auto 0 auto;
+	max-width: 80%;
+	margin: 0% 9% 0% 9%;
+	padding: 1%;
 }
 
 #landing-page {
 	position: relative;
-	max-width: 780px;
-	margin: 0 auto 0 auto;
+	margin: 0% 10% 0% 10%; /* top right bottom left */
 	text-align: center;
 }
