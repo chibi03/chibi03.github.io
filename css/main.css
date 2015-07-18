@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(ttp://fonts.googleapis.com/css?family=Montserrat);
 body { 
 	color: #fff;
 	font-family: 'Montserrat', sans-serif; 
@@ -16,11 +16,12 @@ body {
 }
 
 h1 {
-	font-size: 30pt;
+	font-size: 30px;
 }
 
 a:link {
     color: #fff;
+    text-decoration: none;
 }
 
 a:visited {
@@ -30,11 +31,31 @@ a:visited {
 a:hover {
 	color: #669999;
 }
+a.menu:hover {
+	font-size: 25px;
+}
 
 /*@keyframes backgroundanimation {
 	from {background-position:50% 0px;}
 	to {background-position:50% 4000px;}
 }*/
+
+
+ul.nobullet {
+	font-size: 20px;
+	list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+	text-align: center;
+}
+
+li.enum {
+    background-image: url(../data/ray.png);
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
+    background-size: 15%;
+    padding: 10px;
+}
 
 #font {
 	width: 736px;
