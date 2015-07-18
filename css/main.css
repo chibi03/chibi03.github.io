@@ -3,6 +3,7 @@
 
 html {
     background: rgba(0, 0, 0, 0) url("../img/texture.jpg") repeat scroll 0 0;
+    height:100%;
 }
 
 body { 
@@ -11,6 +12,7 @@ body {
     background: rgba(0, 0, 0, 0) url("../img/transparent_gradient.png") repeat-x fixed 0 0;
     margin: 0;
     padding: 20px 0 0;
+    height:100%;
 }
 
 h1 {
@@ -50,7 +52,7 @@ li.enum {
     background-repeat: no-repeat;
     background-position: -10% 50%;
     background-size: 15%;
-    padding: 10px;
+    padding: 15px;
 }
 
 #prism {
@@ -75,7 +77,7 @@ li.enum {
 	border-radius: 15px;
 	background: #f2f2eb url("../img/styrofoam.jpg") repeat scroll 0 0;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	height: auto;
+	height: 90%;
 	max-width: 80%;
 	margin: 0% 9% 0% 9%;
 	padding: 1%;
