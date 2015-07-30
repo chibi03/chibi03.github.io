@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
-@import url(http://fonts.googleapis.com/css?family=Fira+Mono:700);
+@import url(http://fonts.googleapis.com/css?family=Fira+Mono);
 
 html {
     background: rgba(0, 0, 0, 0) url("../img/texture.jpg") repeat scroll 0 0;
@@ -16,7 +16,8 @@ body {
 }
 
 h1 {
-	font-size: 50px;
+	font-size: 80px;
+	font-weight: 900;
 	text-align: right;
 	font-family: 'Fira Mono', ;
 }
@@ -35,9 +36,8 @@ a:hover {
 }
 
 ul.nobullet {
-	font-size: 20px;
 	list-style-type: none;
-    padding-right: 20px;
+	margin: 5% auto auto auto; /* top right bottom left */
 	text-align: left;
 }
 
@@ -84,12 +84,12 @@ li.enum:hover {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	height: 90%;
 	max-width: 80%;
-	margin: 0% 9% 0% 9%;
+	margin: auto 9% auto 9%; /* top right bottom left */
 	padding: 1%;
 }
 
 #landing-page {
 	position: relative;
-	margin: 0% 10% 0% 10%; /* top right bottom left */
-	text-align: center;
+	margin-right: 10%;
+	float: right;
 }

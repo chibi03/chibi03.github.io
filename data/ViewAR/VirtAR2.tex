@@ -1,0 +1,196 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[12pt, a4paper,ngerman,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage[ngerman]{datetime}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+%change font
+\usepackage{fontawesome}
+\usepackage{fontspec}
+\setmainfont{Cantarell}
+
+\newdateformat{myformat}{\THEDAY. \monthnamengerman[\THEMONTH] \THEYEAR}
+% moderncv themes
+\moderncvstyle{classic}                           % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\rmdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\usepackage{charter}
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage{csquotes}
+\MakeOuterQuote{"}
+
+% adjust the page margins
+\usepackage[margin=1.5cm]{geometry}
+\setlength{\hintscolumnwidth}{4cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Samirah}{Amadu}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{Viehtriftgasse 12/4/19,}{1210 Wien, Austria}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+%\phone[mobile]{+44 7774 809158}                   % optional, remove / comment the line if not wanted
+\phone[mobile]{+43 6818 4345206}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{hireme@amadusamirah.at}                               % optional, remove / comment the line if not wanted
+%\homepage{Großbrittanien.linkedin.com/pub/samirah-amadu/47/a8b/296/}                         % optional, remove / comment the line if not wanted
+\extrainfo{ \href{https://Großbrittanien.linkedin.com/pub/samirah-amadu/47/a8b/296}{Samirah Amadu @ LinkedIn}}                 % optional, remove / comment the line if not wanted
+\photo[3cm][0.4pt]{../picture.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+\renewcommand*{\emailsymbol}{\marvosymbol{66}\hspace{.1cm}}
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+\renewcommand*{\cventry}[7][.75em]{%
+  \cvitem[#1]{#2}{%
+    {\bfseries#3}\newline%
+    \ifthenelse{\equal{#4}{}}{}{{\slshape#4}}%
+    \ifthenelse{\equal{#5}{}}{}{, #5}%
+    \ifthenelse{\equal{#6}{}}{}{, #6}%
+    .\strut%
+    \ifx&#7&%
+      \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
+
+\newcommand{\plus}{\raisebox{.4\height}{\scalebox{.6}{+}}}
+
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{ViewAR GmbH}{zhd. Hr. Dipl.-Ing. Markus Meixner\\ Porzellangasse 43/4\\ A-1090 Vienna, Austria}
+\date{\myformat\today}
+\subject{Bewerbung als Junior C\plus\plus\hspace{.25em}Entwickler}
+
+\opening{Sehr geehrter Herr Dipl.-Ing. Meixner,}
+\closing{Mit freundlichen Grüßen,}
+\enclosure[Anlagen]{Lebenslauf}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+vor kurzem habe ich mein Informatikstudium an der University of Birmingham abgeschlossen. Das Thema meiner Bachelorarbeit war 3D Rekonstruktion von Stereobildern, durch welches ich mein Wissen über Bildverarbeitung vertiefen konnte. Während der Arbeit an diesem Projekt wurde mir bewusst wie sehr mich der Bereich interessiert welches mich dazu bewegt hat mich für diese Stelle zu bewerben.
+
+Während meines Praktikums bei IBM konnte ich Erfahrungen mit agilen Entwicklungsmethoden sammeln, als Mitglied eines kleinen Teams habe ich die SCRUM Methoden angewendet. Unter anderem habe ich als `Iteration lead' gewirkt und Rational Team Concert als Arbeits Management tool genutzt. Hauptsächlich habe ich während dieses Praktikums die Programmiersprachen Ruby und Ant verwendet, jedoch habe ich auch an Mini Projekten gearbeitet, welche ich in Java verfasst habe. Durch meine Arbeit an WebSphere Liberty Profile, für welches ich neue Features in die existierende Build Architektur implementierte, konnte ich einen Einblick in die Komplexität der Software Architektur eines Produktes gewinnen. Außerdem konnte ich aufgrund meines Auslandsstudiums und meiner Arbeit bei IBM konnte ich viele Erfahrungen mit Menschen aus verschiedenen Kulturen sammeln. 
+
+Ihre Arbeit mit Augumented Reality im Bereich der Architektur interessiert mich speziell, da meine Ausbildung an der HTL diesem Bereich entspricht. Es würde mich freuen, ViewAR bei der Entwicklung von Augumented Reality Software zu
+unterstützen.
+
+Für ein Gespräch stehe ich Ihnen jederzeit zur gerne zur Verfügung.\vspace{1em}
+
+\makeletterclosing
+
+\clearpage                            % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+
+
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Persönlich}
+\cvitem{Geburtsort}{Wien}
+\cvitem{Geburtsdatum}{03.01.1992}
+\cvitem{Staatsangehörigkeit}{Österreich}
+
+\section{Ausbildung}
+\cventry{09/2011 -  07/2015}{University of Birmingham, Großbritannien}{BSc Informatik mit einjährigem Praktikum}{}{}{
+\begin{itemize}%
+\item[] Abschluss mit Auszeichnung
+\item[] Bachelorarbeit zum Thema: Photogrammetrie (Stereo 3D Rekonstruktion von Bildern)
+\end{itemize}} % arguments 3 to 6 can be left empty
+
+\cventry{09/2006 - 06/2011}{HTL Camillo Sitte, 1030 Wien, Österreich}{Matura mit Auszeichnung}{}{}{
+\begin{itemize}%
+\item[] Schwerpunkt: Tiefbau
+\end{itemize}}
+
+\section{Berufserfahrung}
+%\subsection{Relevant}
+
+\cventry{10/2014 - 03/2015}{University of Birmingham, Großbritannien}{Peer Assisted Study Sessions Koordinator}{}{}{{}%
+\begin{itemize}%
+\item[] Koordination von Lerngruppen für die Fakultäten Chemie, Informatik, Mathematik, Elektronik und Chemie. 
+\item[] Betreuung und Unterstützung von ca. 60 Lerngruppen, bei der Planung und Leitung der Einheiten.
+\item[] Evaluation der Besucherzahlen und Feedback inklusive der darauf folgenden Maßnahmen.
+\end{itemize}}
+
+\cventry{10/2014 - 04/2015}{School of Computer Science, Birmingham, Großbritannien}{Informatik Studenten Repräsentantin}{}{}{\begin{itemize}%
+\item[] Mitteilung meiner Erfahrungen an angehenden Informatik-Studenten.
+\item[] Teilnahme an "Tagen der offenen Türe", um die Universität aus Sicht der Studenten vorzustellen.
+\end{itemize}}
+
+\cventry{07/2013 - 07/2014}{IBM, Hursley, Großbritannien}{Software Development Praktikantin für WebSphere Liberty Profile}{}{}{{}%
+\begin{itemize}%
+\item[] Integration von WebSphere Liberty Profile in die PaaS Cloud Foundry.
+\item[] Implementierung eines Java Spieles, mit LibGDX Game Engine, für eine Schülerveranstaltung.
+\item[] Anwendung Agiler Entwicklungsmethoden und SCRUM.
+\item[] Leitung von Meetings für den Progress-Austausch mit internationalen Mitgliedern. 
+\end{itemize}}
+
+\cventry{04/2012 - 10/2012}{University of Birmingham IT Services, Birmingham, Großbritannien}{Teilzeit IT Support}{}{}{\begin{itemize}%
+\item[] Level 1 IT Support,  inkludiert das Beheben von Problemen mit PCs, Druckern und Laptops.
+\end{itemize}}
+\cventry{08/2012}{Haschahof, 1100 Wien, Österreich}{Verkäuferin}{}{}{
+\begin{itemize}%
+\item[] Verwaltung des Vorrats.
+\item[] Verkauf von biologischem Gemüse, Fleisch und Getränken.
+\end{itemize}}
+
+\section{Ehrenamtliches Engagement}
+\cventry{01/2015 - 07/2015}{University of Birmingham, Birmingham, Großbritannien}{Athena Swan Komitee Mitglied}{}{}
+{\begin{itemize}%
+\item[] Auseinandersetzung mit dem Thema Frauen in der Technik um eine Bronze Zertifizierung zu erhalten.
+\item[] \emph{Weitere Informationen: http://www.ecu.ac.uk/equality-charters/athena-swan/}
+\end{itemize}}
+\cventry{10/2014 - 04/2015}{University of Birmingham, Birmingham, Großbritannien}{Japanisch Level 3 Klassensprecher}{}{}{\begin{itemize}%
+\item[] Ermittlung der Zufriedenheit der Teilnehmer, Zusammenfassung des Feedbacks und vorschlagen von Verbesserungen an die Kursleiter.
+\end{itemize}}
+\cventry{01/2013 - 06/2013}{University of Birmingham, Birmingham, Großbritannien}{Green Impact Projekt Assistentin}{}{}{
+\begin{itemize}%
+\item[] Verbesserung der Umweltfreundlichkeit der Fakultät indem Müllentsorgungsrichtlinien und Energiesparmethoden eingeführt wurden.
+\item[]  Arbeitete in einem Team und erreichte das Bronze Level des Green Impact Projects.
+\item[] Informierte Studenten und Professoren über das Projekt und dessen Vorteile. Beurteilte den Stand anderer Fakultäten.
+\end{itemize}}
+\cventry{02/2012 - 06/2012}{Barnardo's, Birmingham, Großbritannien}{Second-Hand Verkäuferin}{}{}{
+\begin{itemize}%
+\item[]  Verwaltete eingehenden und ausgehenden Vorrat. 
+\item[] EDV Support.
+\item[] Verkauf von Second-Hand Waren.
+\end{itemize}}
+
+\section{Zusatzkenntnisse und Auszeichnungen}
+\cvitem{Programmiersprachen}{Java, C, Ruby, Matlab, \LaTeX, SQL, HTML, CSS}
+\cvitem{Betriebssysteme}{Windows, Linux}
+\cvitem{Sprachen}{Deutsch (Muttersprache), Englisch (Verhandlungssicher), Japanisch (Grundkenntnisse)}
+
+\section{Interessen und Hobbies}
+\cvitem{~}{Fotografie}
+\cvitem{~}{Inline Skaten}
+\cvitem{~}{Reisen}
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+\end{document}
+
+
+%% end of file `template.tex'.

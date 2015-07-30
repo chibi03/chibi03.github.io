@@ -1,0 +1,157 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt, a4,ngerman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage[ngerman]{datetime}
+
+\usepackage{babel}
+\usepackage{csquotes}
+\MakeOuterQuote{"}
+\newdateformat{myformat}{\THEDAY. \monthnamengerman[\THEMONTH] \THEYEAR}
+% moderncv themes
+\moderncvstyle{oldstyle}                           % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{grey}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\rmdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\usepackage{charter}
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Samirah}{Amadu}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{Viehtriftgasse 12/4/19, }{1210 Wien, Austria}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+%\phone[mobile]{+44 7774 809158}                   % optional, remove / comment the line if not wanted
+\phone[mobile]{+43 6818 4345206}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{hireme@amadusamirah.at}                               % optional, remove / comment the line if not wanted
+%\homepage{Großbrittanien.linkedin.com/pub/samirah-amadu/47/a8b/296/}                         % optional, remove / comment the line if not wanted
+\extrainfo{ \href{https://Großbrittanien.linkedin.com/pub/samirah-amadu/47/a8b/296}{Samirah Amadu}}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture.jpg}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+\renewcommand*{\emailsymbol}{\marvosymbol{66}\hspace{.1cm}}
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Alpine Metal Tech}{Buchbergstraße 11, \\4844 Regau, Österreich}
+\date{\myformat\today}
+\subject{Bewerbung als ProgrammiererIn Bildverarbeitung}
+\opening{Sehr geehrte Frau Aumüller,}
+\closing{Mit freundlichen Grüßen,}
+\enclosure[Anlagen]{Lebenslauf, Bachelordiplom}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+vor einigen Wochen habe ich mein Informatikstudium, an der University of Birmingham, erfolgreich abgeschlossen. Zuvor habe ich durch ein 12-monatiges Praktikum bei IBM, einen Einblick in die Arbeitsweise eines internationalen Unternehmens gewonnen und meine ersten Erfahrungen in der Bildverarbeitung durch meine Bachelorarbeit in der Stereo 3D Rekonstruktion gesammelt. 
+
+Während meiner Bachelorarbeit, über Stereo 3D Rekonstruktion, habe ich Kenntnisse in der Bildverarbeitung erlangt, unter anderem mit Kamera-Kalibrierung und Mustererkennung. Mein Ergebnis war ein Matlab Tool für Stereo Rekonstruktion mit dem ich Quasi-Affine 3D Modelle generieren konnte. Außerdem habe ich während eines einjährigen, studienbegleitendes Praktikums bei IBM in Hursley/UK  sowohl an Klein- als auch Großprojekten teilgenommen und u.a. durch meine Arbeit an der Cloud-Integration des Projekts „WebSphere Liberty Profile“ wertvolle Erfahrung in der internationalen Zusammenarbeit gesammelt.
+
+Der Fokus von Alpine Metal Tech auf Qualität und Innovation, Ihr internationaler Einfluss und Ihre Expertise in der industriellen Bildverarbeitung macht Sie ein Idealer Ort für mich mein Wissen zu erweitern und bewegt mich dazu Ihnen mit meinen fachlichen und persönlichen Kenntnissen zu unterstützen. 
+
+Ich freue mich auf ein Gespräch bei Ihnen und stehe für Rückfragen jederzeit zur Verfügung. \\
+
+\makeletterclosing
+
+\clearpage                            % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+
+
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\section{Persönlich}
+\cvitem{Geburtsort}{Wien}
+\cvitem{Geburtsdatum}{03.01.1992}
+
+\section{Ausbildung}
+\cventry{September 2011 -  Juli 2015}{BSc Informatik mit Praktikum\\}{University of Birmingham}{Birmingham, Großbritannien}{}{
+\begin{itemize}%
+\item[] Abschluss mit Auszeichnung
+\item[] Bachelorarbeit: Photogrammetrie (Stereo 3D Rekonstruktion von Bildern)
+\end{itemize}} % arguments 3 to 6 can be left empty
+
+\cventry{September 2006 - Juni 2011}{Matura\\}{HTBLuVA Camillo Sitte}{Wien, Österreich}{}{
+\begin{itemize}%
+\item[] Schwerpunkt: Tiefbau
+\item[] Note: 1.0
+\end{itemize}}
+
+\section{Berufserfahrung}
+%\subsection{Relevant}
+
+\cventry{Oktober 2014 - März 2015}{Peer Assisted Study Sessions Koordinator\\}{University of Birmingham}{Birmingham, Großbritannien}{}{{}%
+\begin{itemize}%
+\item[] Koordination von Lerngruppen für die Fakultäten Chemie, Informatik, Mathematik, Elektronik und Chemie. 
+\item[] Betreuung und Unterstützung von ca. 60 Lerngruppen, bei der Planung und Leitung der Einheiten.
+\item[] Evaluation der Besucherzahlen und Feedback inklusive der darauf folgenden Maßnahmen.
+\end{itemize}}
+
+\cventry{Oktober 2014 - April 2015}{Informatik Studenten Repräsentantin\\}{School of Computer Science}{Birmingham, Großbritannien}{}{\begin{itemize}%
+\item[] Mitteilung meiner Erfahrungen an angehenden Informatik-Studenten.
+\item[] Teilnahme an "Tagen der offenen Türe", um die Universität aus Sicht der Studenten vorzustellen.
+\end{itemize}}
+
+\cventry{Juli 2013 - Juli 2014}{Software Development Praktikantin für WebSphere Liberty Profile\\}{IBM}{Hursley, Großbritannien}{}{{}%
+\begin{itemize}%
+\item[] Integration von WebSphere Liberty Profile in die PaaS Cloud Foundry.
+\item[] Implementierung eines Java Spieles, mit LibGDX Game Engine, für eine Schülerveranstaltung.
+\item[] Anwendung Agiler Entwicklungsmethoden und SCRUM.
+\item[] Leitung von Meetings für den Progress-Austausch mit internationalen Mitgliedern. 
+\end{itemize}}
+
+\cventry{April 2012 - Oktober 2012}{Teilzeit IT Support\\}{University of Birmingham IT Services}{Birmingham, Großbritannien}{}{\begin{itemize}%
+\item[] Level 1 IT Support,  inkludiert das Beheben von Problemen mit PCs, Druckern und Laptops.
+\end{itemize}}
+
+
+\section{Außercurriculares Engagement}
+\cventry{Jänner 2015 - Juli 2015}{Athena Swan Komitee Mitglied\\}{University of Birmingham}{Birmingham, Großbritannien}{}{}
+\cventry{Oktober 2014 - April 2015}{Japanisch Level 3 Klassensprecher\\}{University of Birmingham}{Birmingham, Großbritannien}{}{}
+\cventry{Jänner 2013 - Juni 2013}{Green Impact Projekt Assistentin\\}{University of Birmingham}{Birmingham, Großbritannien}{}{}
+
+
+\section{Zusatzkenntnisse}
+\cvitem{Programmiersprachen}{Java, C, SQL, Ruby, Matlab, HTML, CSS, \LaTeX}
+\cvitem{Betriebssysteme}{Windows, Linux}
+\cvitem{Sprachen}{Deutsch (Muttersprache), Englisch (fließend), Japanisch (Grundkenntnisse)}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+\end{document}
+
+
+%% end of file `template.tex'.
+
